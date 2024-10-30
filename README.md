@@ -20,7 +20,7 @@ Further details of the application TBD.
 ## Team Members
 
 * Zoubere Yusuf
-* Hamza Habibi
+* Hamza Habib
 * Triet Nguyen
-* Kierra 
+* Kierra Andruko
 
