@@ -1,0 +1,162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|c:\\users\\hamza\\source\\repos\\movierentalsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|c:\\users\\hamza\\source\\repos\\movierentalsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|c:\\users\\hamza\\source\\repos\\movierentalsystem\\movierentalsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:movierentalsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|c:\\users\\hamza\\source\\repos\\movierentalsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\movieform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:movieform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{040F2EF0-CC9C-4FC9-9A36-BE148846363E}|MovieRentalSystem.csproj|solutionrelative:rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:36:57.244Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovieRentalSystem.csproj",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MovieRentalSystem.csproj",
+              "RelativeDocumentMoniker": "MovieRentalSystem.csproj",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MovieRentalSystem.csproj",
+              "RelativeToolTip": "MovieRentalSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T18:06:32.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\ReportForm.cs",
+              "RelativeDocumentMoniker": "ReportForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\ReportForm.cs [Design]",
+              "RelativeToolTip": "ReportForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:12:03.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RentalForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\RentalForm.cs",
+              "RelativeDocumentMoniker": "RentalForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\RentalForm.cs [Design]",
+              "RelativeToolTip": "RentalForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:11:16.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MovieForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MovieForm.cs",
+              "RelativeDocumentMoniker": "MovieForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MovieForm.cs [Design]",
+              "RelativeToolTip": "MovieForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:10:07.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "CustomerForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\CustomerForm.cs [Design]",
+              "RelativeToolTip": "CustomerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:09:08.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:11:10.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAUwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T22:09:35.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\hamza\\source\\repos\\MovieRentalSystem\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:58:58.745Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
