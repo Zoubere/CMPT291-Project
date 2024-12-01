@@ -16,34 +16,56 @@ namespace MovieRentalSystem
         {
             InitializeComponent();
         }
-
-        private void btnCustomerScreen_Click(object sender, EventArgs e)
-        {
-            CustomerForm customerForm = new CustomerForm(); // Create an instance of CustomerForm
-            customerForm.Show();
-        }
-
-        private void btnMovieScreen_Click(object sender, EventArgs e)
-        {
-            MovieForm movieForm = new MovieForm(); // Create an instance of MovieForm
-            movieForm.Show();
-        }
-
-        private void btnRentalScreen_Click(object sender, EventArgs e)
-        {
-            RentalForm rentalForm = new RentalForm(); // Create an instance of RentalForm
-            rentalForm.Show();
-        }
-
-        private void btnReportScreen_Click(object sender, EventArgs e)
-        {
-            ReportForm reportForm = new ReportForm(); // Create an instance of ReportForm
-            reportForm.Show();
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void LoadScreen(UserControl screen)
+        {
+            panelMainContent.Controls.Clear(); // Clear existing controls
+            screen.Dock = DockStyle.Fill; // Make the UserControl fill the panel
+            panelMainContent.Controls.Add(screen); // Add the new UserControl
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            HighlightActiveButton((Button)sender);
+            LoadScreen(new CustomerControl());
+        }
+
+        private void btnMovies_Click(object sender, EventArgs e)
+        {
+            HighlightActiveButton((Button)sender);
+            LoadScreen(new MoviesControl());
+        }
+
+        private void btnRentals_Click(object sender, EventArgs e)
+        {
+            HighlightActiveButton((Button)sender);
+            LoadScreen(new RentalsControl());
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            HighlightActiveButton((Button)sender);
+            LoadScreen(new ReportsControl());
+        }
+        private void HighlightActiveButton(Button activeButton)
+        {
+            foreach (Control control in panelSidebar.Controls)
+            {
+                if (control is Button)
+                {
+                    control.BackColor = SystemColors.Control; // Default color
+                }
+            }
+            activeButton.BackColor = Color.LightBlue; // Highlighted color
+        }
+        
     }
 }

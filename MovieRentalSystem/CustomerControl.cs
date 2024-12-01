@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MovieRentalSystem
 {
-    public partial class CustomerForm : Form
+    public partial class CustomerControl : UserControl
     {
-        public CustomerForm()
+        public CustomerControl()
         {
             InitializeComponent();
+        }
+
+        private void CustomerControl_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

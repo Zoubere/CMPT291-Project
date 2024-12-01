@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MovieRentalSystem
 {
-    public partial class ReportForm : Form
+    public partial class MoviesControl : UserControl
     {
-        public ReportForm()
+        public MoviesControl()
         {
             InitializeComponent();
         }
