@@ -39,8 +39,12 @@ C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\bin\Debug\net8.0-w
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.csproj.AssemblyReference.cache
+C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.CustomerControl.resources
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.LoginForm.resources
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.MainForm.resources
+C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.MoviesControl.resources
+C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.RentalsControl.resources
+C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.ReportsControl.resources
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.csproj.GenerateResource.cache
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.AssemblyInfoInputs.cache
@@ -53,7 +57,3 @@ C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-w
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.pdb
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.genruntimeconfig.cache
 C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\ref\MovieRentalSystem.dll
-C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.CustomerControl.resources
-C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.MoviesControl.resources
-C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.RentalsControl.resources
-C:\Users\hamza\source\repos\CMPT291-Project\MovieRentalSystem\obj\Debug\net8.0-windows\MovieRentalSystem.ReportsControl.resources
