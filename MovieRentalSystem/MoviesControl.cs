@@ -65,13 +65,13 @@ namespace MovieRentalSystem
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO Movie (MovieID, MovieName, MovieType, DistributionFee, NumberOfCopies) " +
+                string query = "INSERT INTO Movie (MovieID, MovieName, MovieType, Fee, NumOfCopy) " +
                "VALUES (NEXT VALUE FOR Movie_MovieID_Seq, @MovieName, @MovieType, @DistributionFee, @NumberOfCopies)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MovieName", movieName);
                 cmd.Parameters.AddWithValue("@MovieType", movieType);
-                cmd.Parameters.AddWithValue("@DistributionFee", distributionFee);
-                cmd.Parameters.AddWithValue("@NumberOfCopies", numberOfCopies);
+                cmd.Parameters.AddWithValue("@Fee", distributionFee);
+                cmd.Parameters.AddWithValue("@NumOfCopy", numberOfCopies);
 
 
                 try
@@ -136,12 +136,12 @@ namespace MovieRentalSystem
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "UPDATE Movie SET MovieName = @MovieName, MovieType = @MovieType, DistributionFee = @DistributionFee, NumberOfCopies = @NumberOfCopies WHERE MovieID = @MovieID";
+                string query = "UPDATE Movie SET MovieName = @MovieName, MovieType = @MovieType, Fee = @Fee, NumOfCopy = @NumOfCopy WHERE MovieID = @MovieID";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MovieName", movieName);
                 cmd.Parameters.AddWithValue("@MovieType", movieType);
-                cmd.Parameters.AddWithValue("@DistributionFee", distributionFee);
-                cmd.Parameters.AddWithValue("@NumberOfCopies", numberOfCopies);
+                cmd.Parameters.AddWithValue("@Fee", distributionFee);
+                cmd.Parameters.AddWithValue("@NumOfCopy", numberOfCopies);
                 cmd.Parameters.AddWithValue("@MovieID", movieID);
 
                 try
