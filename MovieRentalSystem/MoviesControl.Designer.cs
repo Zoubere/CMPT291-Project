@@ -115,10 +115,10 @@
             // dgvMovies
             // 
             dgvMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMovies.Location = new Point(234, 309);
+            dgvMovies.Location = new Point(249, 322);
             dgvMovies.Name = "dgvMovies";
             dgvMovies.RowHeadersWidth = 51;
-            dgvMovies.Size = new Size(273, 168);
+            dgvMovies.Size = new Size(415, 213);
             dgvMovies.TabIndex = 8;
             // 
             // label1
@@ -175,7 +175,7 @@
             Controls.Add(txtFee);
             Controls.Add(txtMovieType);
             Name = "MoviesControl";
-            Size = new Size(752, 480);
+            Size = new Size(912, 552);
             ((System.ComponentModel.ISupportInitialize)dgvMovies).EndInit();
             ResumeLayout(false);
             PerformLayout();

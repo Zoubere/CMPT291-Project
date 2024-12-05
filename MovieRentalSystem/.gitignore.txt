@@ -1,0 +1,11 @@
+﻿# Ignore Visual Studio temporary files
+.vs/
+# Ignore build output directories
+bin/
+obj/
+# Ignore compiled files
+*.dll
+*.exe
+*.pdb
+# Ignore database files
+*.db

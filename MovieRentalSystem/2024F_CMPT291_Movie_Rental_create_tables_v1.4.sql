@@ -56,8 +56,7 @@ CONSTRAINT EmpPhonePeriod CHECK (StartTime < EndTime)
 -- Insert sample employees
 INSERT INTO Employee (SSN, LastName, FirstName, Address, City, Province, PostalCode, StartDate, Username, Password)
 VALUES 
-('123456789', 'Doe', 'John', '123 Main St', 'Edmonton', 'AB', 'T6G1A1', '2020-01-01', 'admin', 'password123'),
-('987654321', 'Smith', 'Jane', '456 Elm St', 'Edmonton', 'AB', 'T6G1A2', '2021-03-15', 'jane.smith', 'jane.smith');
+('123456789', 'Doe', 'John', '123 Main St', 'Edmonton', 'AB', 'T6G1A1', '2020-01-01', 'admin', 'password123');
 
 
 CREATE TABLE Customer (
