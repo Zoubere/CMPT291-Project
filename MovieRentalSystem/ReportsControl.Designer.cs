@@ -1,6 +1,6 @@
 namespace MovieRentalSystem
 {
-    partial class ReportScreen
+    partial class ReportsControl
     {
         /// <summary>
         /// Required designer variable.

@@ -14,18 +14,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace MovieRentalSystem
 {
-    public partial class ReportScreen : Form
+    public partial class ReportsControl : UserControl
+
     {
         public SqlConnection myConnection;
         public SqlCommand myCommand;
         public SqlDataReader myReader;
 
-        public ReportScreen()
+        public ReportsControl()
         {
             InitializeComponent();
 
             //string connectionString = "Server = DESKTOP-67E72SS; Database = Movie Rental System; Trusted_Connection = yes;";
-            string connectionString = "Data Source=DESKTOP-67E72SS;Initial Catalog=\"Movie Rental System\";User ID=sa;Password=admin";
+            string connectionString = "Data Source=LAPTOP-DTDFVPFO\\MSSQLSERVER03;Initial Catalog=\"Movie Rental System\";Integrated Security=True";
             SqlConnection myConnection = new SqlConnection(connectionString);
 
             try
@@ -37,7 +38,6 @@ namespace MovieRentalSystem
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString(), "Error");
-                this.Close();
             }
 
 

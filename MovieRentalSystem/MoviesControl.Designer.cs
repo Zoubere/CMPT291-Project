@@ -41,6 +41,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            cmbMovies = new ComboBox();
+            cmbActors = new ComboBox();
+            btnAssignActors = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvMovies).BeginInit();
             SuspendLayout();
             // 
@@ -115,7 +118,7 @@
             // dgvMovies
             // 
             dgvMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMovies.Location = new Point(249, 322);
+            dgvMovies.Location = new Point(465, 324);
             dgvMovies.Name = "dgvMovies";
             dgvMovies.RowHeadersWidth = 51;
             dgvMovies.Size = new Size(415, 213);
@@ -157,10 +160,38 @@
             label4.TabIndex = 14;
             label4.Text = "Enter the number of Movies:";
             // 
+            // cmbMovies
+            // 
+            cmbMovies.FormattingEnabled = true;
+            cmbMovies.Location = new Point(69, 394);
+            cmbMovies.Name = "cmbMovies";
+            cmbMovies.Size = new Size(151, 28);
+            cmbMovies.TabIndex = 15;
+            // 
+            // cmbActors
+            // 
+            cmbActors.FormattingEnabled = true;
+            cmbActors.Location = new Point(69, 464);
+            cmbActors.Name = "cmbActors";
+            cmbActors.Size = new Size(151, 28);
+            cmbActors.TabIndex = 16;
+            // 
+            // btnAssignActors
+            // 
+            btnAssignActors.Location = new Point(288, 432);
+            btnAssignActors.Name = "btnAssignActors";
+            btnAssignActors.Size = new Size(112, 29);
+            btnAssignActors.TabIndex = 17;
+            btnAssignActors.Text = "Assign Actor";
+            btnAssignActors.UseVisualStyleBackColor = true;
+            // 
             // MoviesControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnAssignActors);
+            Controls.Add(cmbActors);
+            Controls.Add(cmbMovies);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -196,5 +227,8 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private ComboBox cmbMovies;
+        private ComboBox cmbActors;
+        private Button btnAssignActors;
     }
 }

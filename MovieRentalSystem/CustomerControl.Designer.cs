@@ -58,6 +58,12 @@
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            txtPhoneNum = new TextBox();
+            txtPhoneType = new TextBox();
+            txtStartTime = new DateTimePicker();
+            txtEndTime = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
             SuspendLayout();
             // 
@@ -147,7 +153,7 @@
             // 
             // btnAddCustomer
             // 
-            btnAddCustomer.Location = new Point(546, 64);
+            btnAddCustomer.Location = new Point(580, 219);
             btnAddCustomer.Name = "btnAddCustomer";
             btnAddCustomer.Size = new Size(128, 29);
             btnAddCustomer.TabIndex = 25;
@@ -157,7 +163,7 @@
             // 
             // btnSearchCustomer
             // 
-            btnSearchCustomer.Location = new Point(546, 127);
+            btnSearchCustomer.Location = new Point(739, 219);
             btnSearchCustomer.Name = "btnSearchCustomer";
             btnSearchCustomer.Size = new Size(128, 29);
             btnSearchCustomer.TabIndex = 26;
@@ -167,7 +173,7 @@
             // 
             // btnUpdateCustomer
             // 
-            btnUpdateCustomer.Location = new Point(546, 193);
+            btnUpdateCustomer.Location = new Point(570, 267);
             btnUpdateCustomer.Name = "btnUpdateCustomer";
             btnUpdateCustomer.Size = new Size(138, 29);
             btnUpdateCustomer.TabIndex = 27;
@@ -177,7 +183,7 @@
             // 
             // btnDeleteCustomer
             // 
-            btnDeleteCustomer.Location = new Point(546, 260);
+            btnDeleteCustomer.Location = new Point(739, 267);
             btnDeleteCustomer.Name = "btnDeleteCustomer";
             btnDeleteCustomer.Size = new Size(128, 29);
             btnDeleteCustomer.TabIndex = 28;
@@ -310,10 +316,62 @@
             label13.TabIndex = 42;
             label13.Text = "Enter Credit Card Number:";
             // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(535, 38);
+            label14.Name = "label14";
+            label14.Size = new Size(149, 20);
+            label14.TabIndex = 43;
+            label14.Text = "Enter Phone Number:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(535, 87);
+            label15.Name = "label15";
+            label15.Size = new Size(126, 20);
+            label15.TabIndex = 44;
+            label15.Text = "Enter Phone Type:";
+            // 
+            // txtPhoneNum
+            // 
+            txtPhoneNum.Location = new Point(747, 31);
+            txtPhoneNum.Name = "txtPhoneNum";
+            txtPhoneNum.Size = new Size(125, 27);
+            txtPhoneNum.TabIndex = 45;
+            // 
+            // txtPhoneType
+            // 
+            txtPhoneType.Location = new Point(747, 87);
+            txtPhoneType.Name = "txtPhoneType";
+            txtPhoneType.Size = new Size(125, 27);
+            txtPhoneType.TabIndex = 46;
+            // 
+            // txtStartTime
+            // 
+            txtStartTime.Location = new Point(561, 133);
+            txtStartTime.Name = "txtStartTime";
+            txtStartTime.Size = new Size(250, 27);
+            txtStartTime.TabIndex = 47;
+            // 
+            // txtEndTime
+            // 
+            txtEndTime.Location = new Point(561, 175);
+            txtEndTime.Name = "txtEndTime";
+            txtEndTime.Size = new Size(250, 27);
+            txtEndTime.TabIndex = 48;
+            // 
             // CustomerControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(txtEndTime);
+            Controls.Add(txtStartTime);
+            Controls.Add(txtPhoneType);
+            Controls.Add(txtPhoneNum);
+            Controls.Add(label15);
+            Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -384,5 +442,11 @@
         private Label label11;
         private Label label12;
         private Label label13;
+        private Label label14;
+        private Label label15;
+        private TextBox txtPhoneNum;
+        private TextBox txtPhoneType;
+        private DateTimePicker txtStartTime;
+        private DateTimePicker txtEndTime;
     }
 }

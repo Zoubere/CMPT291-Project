@@ -54,21 +54,41 @@ namespace MovieRentalSystem
             string creditCardNum = txtCreditCardNum.Text.Trim();
             string creditCardExp = txtCreditCardExp.Text.Trim();
             string creditCardCvv = txtCreditCardCvv.Text.Trim();
+            string phoneNum = txtPhoneNum.Text.Trim(); // Phone Number
+            string phoneType = txtPhoneType.Text.Trim(); // Phone Type
+            DateTime startTime = txtStartTime.Value; // Start Time
+            DateTime endTime = txtEndTime.Value; // End Time
 
             // Validate required fields
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(ssn) ||
                 string.IsNullOrEmpty(email) || string.IsNullOrEmpty(accountNum) || string.IsNullOrEmpty(creditCardNum) ||
-                string.IsNullOrEmpty(creditCardExp) || string.IsNullOrEmpty(creditCardCvv))
+                string.IsNullOrEmpty(creditCardExp) || string.IsNullOrEmpty(creditCardCvv) ||
+                string.IsNullOrEmpty(phoneNum) || string.IsNullOrEmpty(phoneType))
             {
                 MessageBox.Show("Please fill in all required fields.");
                 return;
             }
 
+            // Check if the customer already exists based on SSN (or any other unique field)
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
+                string checkQuery = "SELECT COUNT(*) FROM Customer WHERE SSN = @SSN";
+                SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                checkCmd.Parameters.AddWithValue("@SSN", ssn);
+                int count = (int)checkCmd.ExecuteScalar();
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Customer already exists!");
+                    return;
+                }
+
+                // Insert Customer Data
                 string query = "INSERT INTO Customer (SSN, LastName, FirstName, Address, City, Province, PostalCode, Email, AccountNum, CreditCardNum, CreditCardExp, CreditCardCvv) " +
-                               "VALUES (@SSN, @LastName, @FirstName, @Address, @City, @Province, @PostalCode, @Email, @AccountNum, @CreditCardNum, @CreditCardExp, @CreditCardCvv)";
+                               "VALUES (@SSN, @LastName, @FirstName, @Address, @City, @Province, @PostalCode, @Email, @AccountNum, @CreditCardNum, @CreditCardExp, @CreditCardCvv);" +
+                               "SELECT CAST(scope_identity() AS int)";  // Get the CustomerID of the inserted customer
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@SSN", ssn);
                 cmd.Parameters.AddWithValue("@LastName", lastName);
@@ -85,9 +105,22 @@ namespace MovieRentalSystem
 
                 try
                 {
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer added successfully!");
-                    LoadCustomers(); // Refresh the DataGridView
+                    int customerID = (int)cmd.ExecuteScalar();  // Retrieve the generated CustomerID
+
+                    // Insert Customer Phone Data using the CustomerID
+                    string phoneQuery = "INSERT INTO CustomerPhone (CustomerID, PhoneNum, PhoneType, StartTime, EndTime) " +
+                                        "VALUES (@CustomerID, @PhoneNum, @PhoneType, @StartTime, @EndTime)";
+                    SqlCommand phoneCmd = new SqlCommand(phoneQuery, conn);
+                    phoneCmd.Parameters.AddWithValue("@CustomerID", customerID);  // Use the generated CustomerID
+                    phoneCmd.Parameters.AddWithValue("@PhoneNum", phoneNum);
+                    phoneCmd.Parameters.AddWithValue("@PhoneType", phoneType);
+                    phoneCmd.Parameters.AddWithValue("@StartTime", startTime);
+                    phoneCmd.Parameters.AddWithValue("@EndTime", endTime);
+
+                    phoneCmd.ExecuteNonQuery();  // Insert phone record
+
+                    MessageBox.Show("Customer and phone number added successfully!");
+                    LoadCustomers();  // Refresh the DataGridView
                 }
                 catch (SqlException ex)
                 {
@@ -95,8 +128,6 @@ namespace MovieRentalSystem
                 }
             }
         }
-
-
 
         private void btnSearchCustomer_Click(object sender, EventArgs e)
         {
@@ -181,7 +212,7 @@ namespace MovieRentalSystem
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Customer deleted successfully!");
-                    LoadCustomers();
+                    LoadCustomers(); // Refresh the DataGridView
                 }
                 catch (SqlException ex)
                 {
